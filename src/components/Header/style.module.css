@@ -1,0 +1,23 @@
+
+
+.header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);;
+    /* box-shadow: 0 0 15px rgba(255, 255, 255, 1); */
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.avatar {
+    background-color: blue;
+}
+
+.addTask {
+    background-color: aqua;
+}
+
+.exit {
+    background-color: rgb(135, 36, 201);
+}
