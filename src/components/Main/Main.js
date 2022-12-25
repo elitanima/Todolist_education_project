@@ -2,13 +2,14 @@
 
 import { TaskCards } from '../TaskСards/TaskСards'
 import style from './style.module.css'
-
-export function Main() {
+// Принимаем из App.js созданую таску и выводим через функцию mapexit
+export function Main({ card }) {
     return (
         <main className={style.main}>
-            <TaskCards />
-            <TaskCards />
-            <TaskCards />
+            { card.map(elementTodo => {
+                return <><TaskCards /><span>{elementTodo.taskText}</span></>
+            })}
+            
         </main>
     )   
 }

@@ -29,7 +29,8 @@ function App() {
     <div className='container'>
       <div className='screenView'>
         <Header addTask={addTask} />
-        <Main />
+        {/* отдаем в Main todoCard */}
+        <Main card={todoCard} /> 
         <Footer />
       </div>
     </div>
