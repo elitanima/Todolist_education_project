@@ -1,17 +1,23 @@
 
 .main {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fill, 200px );
     overflow: scroll;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 1);;
+    /* align-items: center; */
+    background-color: rgb(116, 90, 220);
     /* box-shadow: 0 0 15px rgba(255, 255, 255, 1); */
     border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+   
 }
 
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
+}
+
+.grid {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill);
+    justify-content: center;
 }

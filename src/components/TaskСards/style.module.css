@@ -1,6 +1,14 @@
 
-.card {
+
+.taskCard {
     background-color: red;
-    width: 200px;
-    height: 200px;
+    width: 30vw;
+    height: 100px;
+    border-radius: 10px;
+    border: solid;
+}
+
+.taskCardOpen {
+    background-color: rgb(29, 219, 11);
+    height: 300px;
 }
