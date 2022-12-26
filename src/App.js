@@ -9,19 +9,20 @@ import { useState } from 'react';
 
 function App() {
 
-    const [todoCard, setTodoCard] = useState([]); // массив состояний тасков, изначально пустой
+    const [arrObjTodoTask, setarrObjTodoTask] = useState([]); // массив состояний тасков, изначально пустой
+  
 
     //-----Функция добавления задачи-----
     //принимаем таски (taskText), которые записываются в input формы 
     const addTask = (taskText) => {
       //объект, который создается при вводе таски
-      const newTask = {
+      const newObjTask = {
         id: Date.now(), //генерация id
         taskText,
         status: false
       }
-        //меняем значение todoCard с помощью setTodoCard, получая прошлое значение prev и возвращает новый массив
-        return setTodoCard((prev) => [...prev, newTask])
+        //меняем значение arrObjTodoTask с помощью setarrObjTodoTask, получая прошлое значение prev и возвращает новый массив
+        return setarrObjTodoTask((prev) => [...prev, newObjTask])
     }
     //-----end-----
 
@@ -29,8 +30,7 @@ function App() {
     <div className='container'>
       <div className='screenView'>
         <Header addTask={addTask} />
-        {/* отдаем в Main todoCard */}
-        <Main card={todoCard} /> 
+        <Main arrObjTodoTask={arrObjTodoTask} />  
         <Footer />
       </div>
     </div>

@@ -1,15 +1,16 @@
 
 
-import { TaskCards } from '../TaskСards/TaskСards'
+import { TaskCard } from '../TaskСards/TaskСard'
 import style from './style.module.css'
-// Принимаем из App.js созданую таску и выводим через функцию mapexit
-export function Main({ card }) {
+
+export function Main({ arrObjTodoTask }) {
     return (
         <main className={style.main}>
-            { card.map(elementTodo => {
-                return <><TaskCards /><span>{elementTodo.taskText}</span></>
-            })}
-            
+            <div className={style.grid}>
+                { arrObjTodoTask.map(element => {
+                    return <TaskCard objTask = {element} /> //передача задачи в компонент
+                })}
+            </div>
         </main>
     )   
 }

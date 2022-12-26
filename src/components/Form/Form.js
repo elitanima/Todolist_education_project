@@ -6,8 +6,8 @@ const Form = ({ addTask }) => {
     // функция
     const handleSubmit = (event) => {
         event.preventDefault() 
-
         addTask(inputValue)
+        event.target.reset() //очистка формы
     }
 
     return (
