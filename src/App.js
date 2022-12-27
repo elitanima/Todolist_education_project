@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 function App() {
 
-    const [arrObjTodoTask, setarrObjTodoTask] = useState([]); // массив состояний тасков, изначально пустой
+    const [arrObjTodoTask, setArrObjTodoTask] = useState([]); // массив состояний тасков, изначально пустой
   
 
     //-----Функция добавления задачи-----
@@ -22,7 +22,7 @@ function App() {
         status: false
       }
         //меняем значение arrObjTodoTask с помощью setarrObjTodoTask, получая прошлое значение prev и возвращает новый массив
-        return setarrObjTodoTask((prev) => [...prev, newObjTask])
+        return setArrObjTodoTask((prev) => [...prev, newObjTask])
     }
     //-----end-----
 

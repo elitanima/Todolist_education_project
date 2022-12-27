@@ -6,6 +6,7 @@ export function Header({ addTask }) {
         <header className={style.header}>
             Навигация
             <Form addTask={addTask} />
+            <button className='addTask'>Добавить задачу</button>
         </header>
     )   
 }

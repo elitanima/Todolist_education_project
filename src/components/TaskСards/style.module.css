@@ -1,6 +1,9 @@
 
 
 .taskCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: red;
     width: 30vw;
     height: 100px;
@@ -10,5 +13,25 @@
 
 .taskCardOpen {
     background-color: rgb(29, 219, 11);
-    height: 300px;
+    height: 200px;
+}
+
+.btnDeleteCard {
+    align-self: end;
+    background-color: rgb(4, 12, 244);
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 2px;
+    border-radius: 50%;
+    
+}
+
+.icon {
+    /* position: relative; */
+    width: 15px;
+    filter: invert(1);
+    /* padding: 10px; */
+    /* margin: 20px; */
 }
