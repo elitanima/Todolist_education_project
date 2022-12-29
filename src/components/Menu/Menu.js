@@ -3,11 +3,11 @@ import { useState } from 'react';
 import style from './style.module.css'
 
 // более детально продумать
-export function Menu() {
+export function Menu({setInputValue}) {
     const [openFormAvatar, setOpenFormAvatar] = useState(false);
     let form_avatar;
     if (openFormAvatar){ 
-        form_avatar = <FormAvatar />
+        form_avatar = <FormAvatar setInputValue={setInputValue} />
     }
 
     return (

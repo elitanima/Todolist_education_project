@@ -3,20 +3,19 @@ import { Menu } from '../Menu/Menu'
 import { useState } from 'react';
 import { FormAvatar } from '../FormAvatar/FormAvatar';
 
-        let url_avatar = 'https://main-cdn.sbermegamarket.ru/hlr-system/-14/947/733/168/316/34/600004192527b0.jpeg';
-        let avatar = <img className={style.img_avatar}
-        src={url_avatar}
-        alt ='' />
 
 export function Avatar() {
 
     const [openAvatar, setOpenAvatar] = useState();
-    
-
+    const [inputValue, setInputValue] = useState ();
+    let url_avatar = inputValue;
+    let avatar = <img className={style.img_avatar}
+    src={url_avatar}
+    alt ='' />
     let view;
     // по клику на аватар отображается меню
         if (openAvatar){ 
-            view = <Menu />
+            view = <Menu setInputValue={setInputValue}/>
         }
         // ${style.img_avatar}
         return (
