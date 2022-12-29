@@ -1,0 +1,40 @@
+
+.menu {
+    position: absolute;
+    background-color: rgb(57, 0, 100);
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    z-index: 1;
+    right: 90px;
+    bottom: 50px;
+}
+
+.exit {
+    position: absolute;
+    background-color: rgb(57, 0, 100);
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    z-index: 1;
+    right: 90px;
+    top: 50px;
+}
+
+.edit_avatar {
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 20px;
+    position: absolute;
+    background-color: rgb(57, 0, 100);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    right: -30px;
+    bottom: 60px;
+    
+}

@@ -1,4 +1,5 @@
 
+import style from './style.module.css';
 import { useState } from 'react';
 
 const Form = ({ addTask }) => {
@@ -8,23 +9,22 @@ const Form = ({ addTask }) => {
     const handleSubmit = (event) => {
         // проверка на пустоту
         if (!inputValue){
-            console.log('Заполните форму');
+            console.log('Заполните форму'); // дать знать пользователю об этом (анимация, что то придумать интересное)
         }else addTask(inputValue)
 
         event.preventDefault() 
-        console.log(inputValue)
         event.target.reset() //очистка формы
         setInputValue()
     }
 
     return (
         <form onSubmit={(event) => handleSubmit (event)}>
-            <input onChange={(event)=> setInputValue(event.target.value)} // событие на ввод
+            <input className={style.input_task} onChange={(event)=> setInputValue(event.target.value)} // событие на ввод
                 type='text' 
                 name='todo' 
                 placeholder='Введите задачу'>
             </input>
-            <button type='submit'>ОК</button>
+            <button className={style.btn_input} type='submit'>ОК</button>
         </form>
     )
 }

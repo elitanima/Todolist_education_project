@@ -1,0 +1,30 @@
+
+.avatar {
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    box-shadow:
+        0 0 7px rgb(255, 255, 255);
+}
+
+.avatar:active {
+    box-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255);
+     
+}
+
+.avatar:hover {
+    transform: scale(105%);
+}
+
+
+.img_avatar {
+    background-image: url(https://artdecovl.ru/upload_files/catalog/prev/76786_1.jpg);
+}
+
+
