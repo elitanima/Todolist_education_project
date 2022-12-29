@@ -22,19 +22,15 @@
 }
 
 .edit_avatar {
-    cursor: default;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: aliceblue;
-    font-size: 20px;
+    background-image: url(icon/editing.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(255, 255, 255, 0);
+    width: 15px;
+    height: 15px;
+    filter: invert(1);
     position: absolute;
-    background-color: rgb(57, 0, 100);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    z-index: 1;
-    right: -30px;
-    bottom: 60px;
+    right: -20px;
+    bottom: 70px;
     
 }

@@ -1,8 +1,8 @@
 
-
 .taskCard {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     background-color: red;
     /* width: 30vw; */

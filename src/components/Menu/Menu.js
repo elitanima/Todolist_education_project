@@ -1,17 +1,25 @@
+import { FormAvatar } from '../FormAvatar/FormAvatar';
+import { useState } from 'react';
 import style from './style.module.css'
 
 // более детально продумать
 export function Menu() {
-    const edit = "\u270E"
+    const [openFormAvatar, setOpenFormAvatar] = useState(false);
+    let form_avatar;
+    if (openFormAvatar){ 
+        form_avatar = <FormAvatar />
+    }
+
     return (
         <>
+        {form_avatar}
         <div className={style.menu}
             onClick={() => {
                 console.log('Поменять пользователя');
                 }
             }
         >
-            Имя  
+             
         </div>
         <div className={style.exit}
             onClick={() => {
@@ -19,15 +27,14 @@ export function Menu() {
                 }
             }
         >
-            Выход  
+             
         </div>
         <div className={style.edit_avatar}
             onClick={() => {
-                console.log('Изменить аватар!');
+                setOpenFormAvatar(!openFormAvatar);
                 }
             }
         >
-            {edit} 
         </div>
       </>
     )
