@@ -21,11 +21,12 @@ function App() {
         taskText,
         status: false
       }
+      
         //меняем значение arrObjTodoTask с помощью setarrObjTodoTask, получая прошлое значение prev и возвращает новый массив
         return setArrObjTodoTask((prev) => [...prev, newObjTask])
     }
     //-----end-----
-
+    console.log(arrObjTodoTask);
   return (
     <div className='container'>
       <div className='screenView'>
